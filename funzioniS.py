@@ -50,7 +50,8 @@ def molti(a,b):
     for i in range(0,b,1):
         res = res + a
     return res
-def divisione(n1, n2):
+
+def dividi(n1, n2):
     result = 0
     while n1 >= n2:
         n1 -= n2
@@ -65,3 +66,12 @@ print(massimo(casistita),minimo(casistita),lung(casistita))
 print(rango(0,3,1))
 print(molti(10,8))
 print(dividi(81,3))
+'''
+Creare un programma che chieda all’utente di inserire una stringa di lunghezza pari. Se l’utente inserisce una
+stringa dispari, il programma dovrà chiedergli di reinserirla fino a che non inserisca una stringa di lunghezza
+pari.
+'''
+def stringaPari():
+    ind = 0
+    while(ind < 0):
+        
