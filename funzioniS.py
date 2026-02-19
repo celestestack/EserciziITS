@@ -32,16 +32,16 @@ def lung(lista):
         conta += 1
     return conta
 
-def rango(iniz, ferma, passo):
-    while(iniz < ferma-1):
+def rango(iniz=0, ferma=1, passo=1):
+    res = []
+    while(iniz < ferma):
+        res.append(iniz)
         iniz += passo
-    return 
+    return res
 
 
 
 casistita = [79,4289,990,39,755,5]
-a=4
-b=6
-c=1
+
 print(massimo(casistita),minimo(casistita),lung(casistita))
-rango(a,b,c)
+print(rango(0, 3,1))
