@@ -33,15 +33,35 @@ def lung(lista):
     return conta
 
 def rango(iniz=0, ferma=1, passo=1):
+    '''
+    simile a funzione range
+    '''
     res = []
     while(iniz < ferma):
         res.append(iniz)
         iniz += passo
     return res
 
+def molti(a,b):
+    '''
+    moltiplica senza usare "*"
+    '''
+    res = 0
+    for i in range(0,b,1):
+        res = res + a
+    return res
+def divisione(n1, n2):
+    result = 0
+    while n1 >= n2:
+        n1 -= n2
+        result += 1
+    return result, n1
+         
 
 
 casistita = [79,4289,990,39,755,5]
 
 print(massimo(casistita),minimo(casistita),lung(casistita))
-print(rango(0, 3,1))
+print(rango(0,3,1))
+print(molti(10,8))
+print(dividi(81,3))
