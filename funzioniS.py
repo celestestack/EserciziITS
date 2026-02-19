@@ -74,4 +74,6 @@ pari.
 def stringaPari():
     ind = 0
     while(ind < 0):
-        
+        elem = input("Inserisci una stringa: ")
+        if elem.isalpha():
+            ind += 1
