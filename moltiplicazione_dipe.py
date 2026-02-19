@@ -8,4 +8,5 @@ def moltiplicazione(n1, n2):
         result += n1
     return result
 
+
 print(moltiplicazione(7, 5))
