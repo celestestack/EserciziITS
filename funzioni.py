@@ -1,3 +1,7 @@
+'''Implementare delle funzioni che consentano di trovare il massimo, minimo, contare il numero di elementi su
+una lista e ridefinire la funzione range senza usare le funzioni predefinite di python (len, max, min, range).'''
+
+
 def massimo(lista):
     max = lista[0]
     for i in lista:
