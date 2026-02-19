@@ -41,7 +41,10 @@ def rango(iniz=0, ferma=1, passo=1):
         res.append(iniz)
         iniz += passo
     return res
-
+'''
+Creare un programma che permetta all’utente di effettuare la moltiplicazione tra due numeri senza utilizzare
+l’operatore * ma calcolando il risultato attraverso somme ripetute (numeri positivi).
+'''
 def molti(a,b):
     '''
     moltiplica senza usare "*"
@@ -50,13 +53,16 @@ def molti(a,b):
     for i in range(0,b,1):
         res = res + a
     return res
-
-def dividi(n1, n2):
-    result = 0
-    while n1 >= n2:
-        n1 -= n2
-        result += 1
-    return result, n1
+'''
+Creare un programma che permetta all’utente di effettuare la divisione tra due numeri e mostri a schermo
+quoziente e resto senza utilizzare né l’operatore / né l’operatore %
+'''
+def dividi(a, b):
+    res = 0
+    while a >= b:
+        a -= b
+        res += 1
+    return res
          
 
 
@@ -72,8 +78,10 @@ stringa dispari, il programma dovrà chiedergli di reinserirla fino a che non in
 pari.
 '''
 def stringaPari():
-    ind = 0
-    while(ind < 0):
-        elem = input("Inserisci una stringa: ")
-        if elem.isalpha():
-            ind += 1
+    
+    while True:    
+        elem = input("Inserisci una stringa di lunghezza pari: ")
+        if(len(elem)%2 == 0):
+            return ("Bravo!!!")
+        
+print(stringaPari())
