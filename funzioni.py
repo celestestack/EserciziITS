@@ -14,8 +14,14 @@ def massimo(lista):
 
 
 def minimo(lista):
+    '''
+    funzione che individua il minimo senza usare funzione min (pazzesca)
+    '''
     min = lista[0]
     for i in lista:
         if i < min:
             min = i
     return min
+
+def lung(lista):
+    
