@@ -37,6 +37,10 @@ def myRange(start, stop, step = 1):
         corrente += step
     return risultato
 
+
+
+
+
 print(massimo([1, 2, 3, 4]))
 print(minimo([1, 2, 3, 4]))
 print(conta([1, 2, 3, 4]))
