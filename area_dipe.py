@@ -15,29 +15,36 @@ def areaCerchio(raggio):
 
 
 def main():
-    print("opzione 1: area del quadrato")
-    print("opzione 2: area del rettangolo")
-    print("opzione 3: area del cerchio")
-    print("opzione 4: esci")
+    while True:
+        print("\n--- MENU CALCOLO AREE ---")
+        print("opzione 1: area del quadrato")
+        print("opzione 2: area del rettangolo")
+        print("opzione 3: area del cerchio")
+        print("opzione 4: esci")
 
-    opzione_scelta = input("scegli un'opzione: ")
+        opzione_scelta = input("scegli un'opzione: ")
 
-    if opzione_scelta == '1':
-        lato = int(input("inserire lato del quadrato: "))
-        print(areaQuadrato(lato))
-    elif opzione_scelta == '2':
-        lato1 = int(input("inserire base rettangolo: "))
-        lato2 = int(input("inserire altezza rettangolo: "))
-        print(areaRettangolo(lato1, lato2))
-    elif opzione_scelta == '3':
-        raggio = int(input("inserire raggio del cerchio: "))
-        print(areaCerchio(raggio))
-    else:
-        print("exit")
+        if opzione_scelta == '1':
+            lato = float(input("inserire lato del quadrato: "))
+            risultato = areaQuadrato(lato)
+            print(f"l'area del quadrato è: {risultato}")
+        elif opzione_scelta == '2':
+            lato1 = float(input("inserire base rettangolo: "))
+            lato2 = float(input("inserire altezza rettangolo: "))
+            risultato = areaRettangolo(lato1, lato2)
+            print(f"l'area del rettangolo è: {risultato}")
+        elif opzione_scelta == '3':
+            raggio = float(input("inserire raggio del cerchio: "))
+            risultato = areaCerchio(raggio)
+            print(f"l'area del cerchio è: {risultato}")
+        elif opzione_scelta == '4':
+            print("arrivederci!")
+            break
+        else:
+            print("opzione non valida. riprova.")
 
 
 
-
-
-
-    
+def avvia():
+    main()
+avvia()
