@@ -3,7 +3,31 @@ import math
 Riscrivete il programma ‘area.py’, definendo funzioni separate per l’area del quadrato, del rettangolo e del cerchio (3.14 *
 raggio**2). Il programma deve includere anche un’interfaccia a menu
 '''
+def areaq(lato):
+    return lato * lato
+def arear(lato, base):
+    return lato*base
+def areac(raggio):
+    return 3.14 *raggio**2
 
+def areapy():
+    flag = 0
+    while True:
+        sel = int(input("Digita\n0 per uscire\n1 per calcolare l'area del quadrato\n2 per calcolare l'area del rettangolo\n3 per calcolare l'area del cerchio\n"))
+        if sel == 0:
+            return 0
+        if sel == 1:
+            q = int(input("Inserisci il lato del quadrato: "))
+            print(areaq(q))
+        if sel == 2:
+            lato = int(input("Inserisci il lato del rettangolo: "))
+            base = int(input("Inserisci la base del rettangolo: "))
+            print(arear(lato, base))
+        if sel == 3:
+            r = int(input("Inserisci il raggio del cerchio: "))
+            print(areac(r))
+        
+print(areapy())
 '''
 Scrivere una funzione che dica se una parola è palindroma (“Anna”, “SOS”)
 '''
