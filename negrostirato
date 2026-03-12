@@ -1,0 +1,6 @@
+stringa = ""
+while stringa != 'exit':    
+    stringa = input ('Inserisci una stringa: ')
+    glob al 
+
+ 
