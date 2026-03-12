@@ -20,6 +20,10 @@ EserciziITS/
 │   ├── primo_dipe.py           # Verifica numeri primi
 │   ├── stringaPari_dipe.py     # Validazione stringhe di lunghezza pari
 │   └── stringablbl_dipe.py     # Generatore stringhe alternate (@ e #)
+├── 📂 esercizi samu/           # Esercizi dalle slide
+│   ├── funzioniSlide1.py       # Esercizi dalle slide - parte 1
+│   ├── funzioniSlide2.py       # Esercizi dalle slide - parte 2
+│   └── funzioniSlide3.py       # Esercizi dalle slide - parte 3
 ├── 📂 notebook dipe/           # Notebook Jupyter interattivi
 │   ├── eserciziLez0.ipynb      # Esercizi base e avanzati con consegne complete
 │   └── eserciziLez1.ipynb      # Raccolta esercizi algoritmi avanzati
@@ -40,11 +44,20 @@ Contiene 13 esercizi Python individuali, ognuno focalizzato su un concetto speci
 - **Visualizzazione**: istogrammi, calcolo aree geometriche
 - **Funzioni avanzate**: implementazioni personalizzate di funzioni built-in
 
-### 📓 notebook dipe/
+### 📚 esercizi samu/
+Contiene esercizi organizzati dalle slide del corso:
+- **funzioniSlide1.py**: Prima raccolta di esercizi dalle slide
+- **funzioniSlide2.py**: Seconda raccolta di esercizi dalle slide  
+- **funzioniSlide3.py**: Terza raccolta di esercizi dalle slide
+- Esercizi strutturati seguendo il materiale didattico ufficiale
+- Implementazioni complementari agli esercizi individuali
+
+### �📓 notebook dipe/
 Contiene i Jupyter Notebook interattivi con le raccolte complete di esercizi:
 - **eserciziLez0.ipynb**: 
   - 16 esercizi completi dalla lezione 0
-  - Analisi cicli while con break
+  - Codice pulito e minimalista senza commenti
+  - Test di verifica integrati nelle celle principali
   - Esercizi base (4): controllo numeri, confronti, divisioni, aree
   - Esercizi con cicli (6): somme, prodotti, conteggi, calcolatrici
   - Esercizi avanzati (3): password, controlli, riconoscimento nomi
@@ -52,6 +65,7 @@ Contiene i Jupyter Notebook interattivi con le raccolte complete di esercizi:
   - Esercizio finale: programma lunghezze stringhe maiuscole
 - **eserciziLez1.ipynb**: 
   - 13 esercizi algoritmi avanzati
+  - Codice ottimizzato con chiamate semplici
   - Operazioni matematiche senza operatori standard
   - Implementazioni personalizzate di funzioni built-in
   - Algoritmi di ricerca e validazione
@@ -63,6 +77,12 @@ Contiene i Jupyter Notebook interattivi con le raccolte complete di esercizi:
 ```bash
 cd "esercizi dipe"
 python area_dipe.py      # Esempio: esecutore calcolatore aree
+```
+
+### Per gli esercizi dalle slide:
+```bash
+cd "esercizi samu"
+python funzioniSlide1.py  # Esempio: esercizi dalla prima slide
 ```
 
 ### Per i notebook:
