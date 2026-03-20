@@ -5,16 +5,20 @@ while iniz < fine:
         print(iniz)
     iniz += 1
 
-
-    
-for i in range(-6, 24, 2):
+i = -6
+f = 24
+while i < f:
     print(i)
-   
-for i in range(-10, 8, 1):
+    i += 2
+
+i = -10
+f = 8  
+while i < f:
     if i < 0 and i % 2 == 0:
         print(i)
     if i > 0 and i % 2 == 1:
         print(i)
+    i += 1
 
 #chiede all'utente di inserire un numero se viene inserito 0 esce dal while
 val = 1
@@ -61,23 +65,29 @@ print(lung)
 #stampa le vocali inserite nella stringa
 vocali = "aeiou"
 stringa = input("Inserisci una stringa, ti farò uscire le vocali: ")
+i = 0
 
-for i in range(len(stringa)):
+while i < len(stringa):
     if stringa[i] in vocali:
         print(stringa[i])
+    i += 1
 
 #stampa le consonanti inserite nella stringa
 stringa = input("Inserisci una stringa, ti farò uscire le consonanti: ")
+i = 0
 
-for i in range(len(stringa)):
+while i < len(stringa):
     if stringa[i] not in vocali and stringa[i].isdigit() == False: 
             print(stringa[i])
+    i += 1
 
-#
+#stampa le lettere in posizione pari della stringa inserita
 disp = ""
 stringa = input("Inserisci una stringa, ti faro uscire solo le posizioni pari della parola: ")
-for i in range(len(stringa)):
+i = 0
+
+while i < len(stringa):
     if i % 2 == 0:
         disp += stringa[i]
-
+    i += 1
 print(disp)

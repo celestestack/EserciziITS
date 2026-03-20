@@ -31,3 +31,18 @@ for i in range(len(stringa)):
     if stringa[i] in vocali:
         print(stringa[i])
 
+#stampa le consonanti inserite nella stringa
+stringa = input("Inserisci una stringa, ti farò uscire le consonanti: ")
+
+for i in range(len(stringa)):
+    if stringa[i] not in vocali and stringa[i].isdigit() == False: 
+            print(stringa[i])
+
+#stampa le lettere in posizione pari della stringa inserita
+disp = ""
+stringa = input("Inserisci una stringa, ti faro uscire solo le posizioni pari della parola: ")
+for i in range(len(stringa)):
+    if i % 2 == 0:
+        disp += stringa[i]
+
+print(disp)
