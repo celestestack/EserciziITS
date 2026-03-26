@@ -27,13 +27,10 @@ def mostraMenu():
 def inserimento(lista):
     num = int(input("Quanti numeri vuoi inserire?: "))
     i = 0
-    while i < num:
-        n = 4
-
+    for i in range(num):
+        n = int(input("Che numero vuoi inserire?: "))
         lista.append(n)
-        i += 1
     return lista
-
 
 def somma(lista):
     tot = 0
