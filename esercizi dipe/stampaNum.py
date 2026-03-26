@@ -15,7 +15,7 @@ for i in range (-100, -24):
     if i%2 != 0:
         print(i)
 
-# stampare i numeri positivi che vanno da -100 a 24
+# stampare i numeri positivi che vanno da -100 a 2 4
 
 for i in range (-100, 24):
     if i >= 0:
@@ -83,9 +83,68 @@ tot = 0
 stringa = "a"
 
 while len(stringa) != 0:
-    stringa = input("Inserisci la stringa: ")
+    stringa = input("inserisci una stringa: ")
     
     if stringa != "" and 65 <= ord(stringa[0]) <= 90:
         tot += len(stringa)
 
 print(tot)
+
+# chiedi all'utente di inserire una stringa e restituisci soltanto le vocali
+#con for
+stringa = input("inserisci una stringa: ")
+vocali = "aeiouAEIOU"
+result = ""
+for lettera in stringa:
+    if lettera in vocali:
+        result += lettera
+print(result)
+#con while
+stringa = input("inserisci una stringa: ")
+vocali = "aeiouAEIOU"
+result = ""
+i = 0
+while i < len(stringa):
+    if stringa[i] in vocali:
+        result += stringa[i]
+    i += 1
+print(result)
+
+# chiedi all'utente di inserire una stringa e restituisci soltanto le consonanti
+#con for
+stringa = input("inserisci una stringa: ")
+vocali = "aeiouAEIOU"
+result = ""
+for lettera in stringa:
+    if lettera not in vocali:
+        result += lettera
+print(result)
+
+#con while
+stringa = input("inserisci una stringa: ")
+vocali = "aeiouAEIOU"
+result = ""
+i = 0
+while i < len(stringa):
+    if stringa[i] not in vocali:
+        result += stringa[i]
+    i += 1
+print(result)
+
+# chiedi all'utente di inserire una stringa e restituisci soltanto i caratteri in posizione pari
+#con for
+stringa = input("inserisci una stringa: ")
+result = ""
+for i in range (len(stringa)):
+    if i%2 == 0:
+        result += lettera[i]
+print(result)
+#con while
+stringa = input("inserisci una stringa: ")
+result = ""
+i = 0
+while i < len(stringa):
+    if i%2 == 0:
+        result += stringa[i]
+    i += 1
+print(result)
