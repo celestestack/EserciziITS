@@ -157,8 +157,7 @@ for i in range(0, len(parola), 1):
 parola = input("inserisci stringa: ")
 for i in range(0,len(parola), 1):
     if parola[i] % 2 == 0:
-
-
+        print(parola)
 
 #chiedere all'utente di compiere una serie di operazioni somma differenza moltiplicazione tra diversi elementi di una lista 
 def menu():
