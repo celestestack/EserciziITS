@@ -4,11 +4,14 @@ def mostraMenu():
     scelta = 1
     cont = 0
 
-    while scelta != 0:
+    while scelta != 0 and cont < 3:
         print("Menù calcolatrice\n1)Inserimento dati\n2)somma\n3)differenza\n4)moltiplicazione\n0)per uscire\n\n")
         
         scelta = int(input("Fai la tua scelta: "))
-        if scelta == 1:
+        if scelta < 0 or scelta > 4:
+            print(f"Hai inserito un valore errato! Ti rimangono {2-cont} tentativi")
+            cont +=1
+        elif scelta == 1:
             inserimento(lista)
         elif scelta == 2:
             print(somma(lista))
@@ -24,13 +27,10 @@ def mostraMenu():
 def inserimento(lista):
     num = int(input("Quanti numeri vuoi inserire?: "))
     i = 0
-    while i < num:
-        n = 4
-
+    for i in range(num):
+        n = int(input("Che numero vuoi inserire?: "))
         lista.append(n)
-        i += 1
     return lista
-
 
 def somma(lista):
     tot = 0
